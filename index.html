@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Episodes Trainer (9 Эпизодов: 54 Уровня)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Сайдбар эпизодов -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h1>⚡ JS Episodes Quest</h1>
+      <p>9 Эпизодов • 54 Уровня (Теория + DOM-код)</p>
+
+      <div class="overall-progress-card">
+        <div class="progress-info">
+          <span>Общий прогресс:</span>
+          <span id="overall-progress-text">0 / 54 (0%)</span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill" id="overall-progress-fill"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Список 9 эпизодов -->
+    <div class="episode-list" id="episode-list">
+      <!-- Заполняется из app.js -->
+    </div>
+  </aside>
+
+  <!-- Основная область текущего эпизода -->
+  <main class="workspace">
+    
+    <!-- Шапка выбранного эпизода -->
+    <header class="episode-nav-header">
+      <div class="episode-title-row">
+        <h2 id="ep-title">Загрузка эпизода...</h2>
+      </div>
+      <div class="episode-desc" id="ep-desc">Описание темы...</div>
+
+      <!-- 6 Табов уровней: 3 No-Code + 3 Code with DOM -->
+      <div class="level-tabs" id="level-tabs">
+        <!-- Генерируется динамически -->
+      </div>
+    </header>
+
+    <!-- Контент активного уровня (No-Code или Code с DOM) -->
+    <section class="level-content-area" id="level-content-area">
+      <!-- Генерируется из app.js -->
+    </section>
+
+  </main>
+
+  <script src="episodes.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
